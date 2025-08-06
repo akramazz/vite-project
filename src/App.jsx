@@ -10,11 +10,11 @@ function App() {
     "linear-gradient(to right, #9055ff, #13e2da)",
     "linear-gradient(to right, #0b63f6, #003cc5)",
     "linear-gradient(to right, #d6ff7f, #00b3cc)",
-    "linear-gradient(to right, #e233ff, #ff6b00)",
+    "linear-gradient(to right, #8f8891ff, #1f1e1eff)",
     "linear-gradient(to right, #df98fa, #9055ff)",
     "linear-gradient(to right, #43cea2, #185a9d)",
     "linear-gradient(to right, #8360c3, #2ebf91)",
-    "linear-gradient(to right, #f7971e, #ffd200)",
+    "linear-gradient(to right, #f7971e, #ff3c00ff)",
     "linear-gradient(to right, #e96443, #904e95)",
   ];
 
