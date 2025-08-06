@@ -1,0 +1,43 @@
+.carte {
+  height: 150px;
+  border-radius: 12px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0s;
+  font-size: 1.2em;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.carte-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.color-code {
+  margin-bottom: 8px;
+  font-family: monospace;
+  font-size: 0.8rem;
+  color: #555;
+  text-align: center;
+  word-break: break-word;
+  max-width: 150px;
+}
+
+.carte {
+  height: 150px;
+  width: 150px;
+  border-radius: 12px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s;
+  font-size: 1.2em;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  cursor: default;
+}

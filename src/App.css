@@ -1,0 +1,89 @@
+/* Reset de base */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Conteneur principal centré */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Titre */
+.app-container h1 {
+  margin-bottom: 30px;
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Grille 4x4x4 */
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Toujours 4 colonnes */
+  gap: 20px;
+  width: 100%;
+}
+
+/* Style des cartes */
+.carte {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 200px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  transition: transform 0.3s ease;
+  padding: 10px;
+}
+
+.carte:hover {
+  transform: scale(1.05);
+}
+.carte {
+  aspect-ratio: 1 / 1; /* carré */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  transition: transform 0.3s ease;
+  padding: 10px;
+}
+
+.carte:hover {
+  transform: scale(1.2);
+}
+.carte-label {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.carte-code {
+  background-color: rgba(0, 0, 0, 0.3); /* fond semi-transparent */
+  border-radius: 6px;
+  padding: 5px 10px;
+  font-size: 0.9em;
+  margin-top: 8px;
+}
