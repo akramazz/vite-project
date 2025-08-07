@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import Carte from "./Carte";
 
 function App() {
+  const [background, setBackground] = useState("");
+
   const gradients = [
     "linear-gradient(to right, #f40076, #df98fa)",
     "linear-gradient(to right, #f06966, #fad6a6)",
@@ -18,12 +20,21 @@ function App() {
     "linear-gradient(to right, #e96443, #904e95)",
   ];
 
+  useEffect(() => {
+    document.body.style.background = background;
+  }, [background]);
+
   return (
     <div className="app-container">
       <h1>Palettes de Couleurs</h1>
       <div className="container">
         {gradients.map((gradient, index) => (
-          <Carte key={index} gradient={gradient} index={index} />
+          <Carte
+            key={index}
+            gradient={gradient}
+            index={index}
+            onClick={() => setBackground(gradient)}
+          />
         ))}
       </div>
     </div>

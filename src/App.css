@@ -1,10 +1,9 @@
-/* Reset de base */
 body {
   margin: 0;
   padding: 0;
   background-color: #f0f0f0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-
+  transition: background 0.5s ease;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,6 +19,8 @@ body {
   border-radius: 12px;
   background-color: #ffffff;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 1200px;
 }
 
 /* Titre */
@@ -30,33 +31,15 @@ body {
   color: #333;
 }
 
-/* Grille 4x4x4 */
+/* Grille responsive 4 colonnes */
 .container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Toujours 4 colonnes */
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   width: 100%;
 }
 
 /* Style des cartes */
-.carte {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  height: 200px;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  color: white;
-  font-weight: bold;
-  text-align: center;
-  transition: transform 0.3s ease;
-  padding: 10px;
-}
-
-.carte:hover {
-  transform: scale(1.05);
-}
 .carte {
   aspect-ratio: 1 / 1; /* carré */
   display: flex;
@@ -70,18 +53,20 @@ body {
   text-align: center;
   transition: transform 0.3s ease;
   padding: 10px;
+  cursor: pointer;
 }
 
 .carte:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
+
 .carte-label {
   font-weight: bold;
   font-size: 1.2em;
 }
 
 .carte-code {
-  background-color: rgba(0, 0, 0, 0.3); /* fond semi-transparent */
+  background-color: rgba(0, 0, 0, 0.3);
   border-radius: 6px;
   padding: 5px 10px;
   font-size: 0.9em;
